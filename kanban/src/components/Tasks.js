@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export default function Tasks() {
+export default function Tasks({ status }) {
   const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
@@ -20,9 +20,12 @@ export default function Tasks() {
     fetchTasks();
   }, []);
 
+  // Filter tasks based on the status prop
+  const filteredTasks = tasks.filter(task => task.status === status);
+
   return (
     <div>
-      {tasks.map(task => (
+      {filteredTasks.map(task => (
         <div key={task.id}>
           <h2>{task.title}</h2>
           <p>{task.description}</p>
@@ -31,4 +34,3 @@ export default function Tasks() {
     </div>
   );
 }
-

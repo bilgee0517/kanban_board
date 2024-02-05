@@ -1,15 +1,24 @@
-import React from 'react';
-import Tasks from './components/Tasks';
-import Header from './components/Header'; 
-import Container from 'react-bootstrap/Container';
+import React, { useState } from 'react';
+import { Container, Button } from 'react-bootstrap';
+import AddTask from './pages/AddTask';
+import KanbanBoard from './pages/KanbanBoard';
 
-function App() {
+export default function App() {
+  const [showAddTaskModal, setShowAddTaskModal] = useState(false);
+
+  const handleClose = () => setShowAddTaskModal(false);
+  const handleShow = () => setShowAddTaskModal(true);
+
   return (
-    <Container fluid className="App">
-      <Header />
-      <Tasks />
-    </Container>
+    <Container>
+      <KanbanBoard />
+      <Container>
+        <Button variant="primary" onClick={handleShow}>
+          Add Task
+        </Button>
+        <AddTask show={showAddTaskModal} handleClose={handleClose} />
+      </Container>
+     </Container>
   );
 }
 
-export default App;

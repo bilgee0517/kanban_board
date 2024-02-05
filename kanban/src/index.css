@@ -11,3 +11,69 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container {
+  margin-top: 20px;
+}
+
+/* Kanban board styling */
+.kanban-column {
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.kanban-column h3 {
+  text-align: center;
+  color: #007bff;
+}
+
+.task-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Add some hover effect for tasks */
+.task-card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+  .kanban-column {
+    margin-bottom: 15px;
+  }
+}
+.add-task-modal .modal-header {
+  background-color: #007bff;
+  color: white;
+}
+
+.add-task-modal .modal-footer {
+  background-color: #f8f9fa;
+}
+
+.Header{
+  text-align: center;
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Header{
+  text-align: center;
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
