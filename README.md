@@ -59,7 +59,6 @@ python3 -m venv venv
 venv\Scripts\activate.bat
 pip3 install -r requirements.txt
 python3 app.py
-Node.js:
 ```
 
 Node.js:
