@@ -1,19 +1,5 @@
-.container {
-  margin-top: 20px;
-}
 
-/* Kanban board styling */
-.kanban-column {
-  background-color: #f8f9fa;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 5px;
-}
 
-.kanban-column h3 {
-  text-align: center;
-  color: #007bff;
-}
 
 .task-card {
   background-color: white;
@@ -32,6 +18,7 @@
 /* Responsive layout adjustments */
 @media (max-width: 768px) {
   .kanban-column {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 }
+
